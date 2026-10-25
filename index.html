@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Royal Cafe - Fresh Food & Great Coffee</title>
+    <meta name="description" content="Royal Cafe is a cozy place for fresh food, delicious drinks and good moments. Experience the Royal treatment.">
+    <meta name="keywords" content="Royal Cafe, coffee shop, restaurant, Delhi, fresh food, great coffee">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">☕ PP Royal Cafe</a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary btn-order-nav">Order Now</a>
+                <a href="#" class="auth-link" id="loginBtn">Login</a>
+                <a href="#" class="auth-link auth-link-btn" id="signupBtn">Sign Up</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/1699114/pexels-photo-1699114.jpeg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to PP Royal Cafe</h1>
+            <p class="hero-subtitle">Fresh Food • Great Taste • Royal Experience</p>
+            <p class="hero-text">Fresh food, great coffee and a cozy place to enjoy every moment.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Order Now</a>
+                <a href="#menu" class="btn btn-outline-light">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+        <div class="about-img-wrap fade-in slide-in-left">
+            <img src="https://images.pexels.com/photos/8847017/pexels-photo-8847017.jpeg" alt="Royal Cafe interior with warm lighting and cozy seating">
+        </div>
+                <div class="about-text fade-in slide-in-right">
+                    <p class="section-label">Our Story</p>
+                    <h2>About Royal Cafe</h2>
+                    <p class="section-subtitle">Royal Cafe is a cozy place for fresh food, delicious drinks and good moments. We use quality ingredients to serve tasty food in a warm and friendly atmosphere.</p>
+                    <div class="features">
+                        <div class="feature-card">
+                            <div class="feature-icon">☕</div>
+                            <div class="feature-body">
+                                <h3>Fresh Coffee</h3>
+                                <p>Freshly brewed and full of flavor.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🍕</div>
+                            <div class="feature-body">
+                                <h3>Fresh Food</h3>
+                                <p>Delicious food made with quality ingredients.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">❤️</div>
+                            <div class="feature-body">
+                                <h3>Friendly Service</h3>
+                                <p>Warm and friendly service for everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MENU ==================== -->
+    <section class="section menu-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">Our Menu</p>
+                <h2>Our Popular Menu</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card fade-in stagger-1">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/111159/pexels-photo-111159.jpeg" alt="Freshly brewed coffee cup with latte art">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">☕ Coffee</h3>
+                            <span class="menu-price">₹120</span>
+                        </div>
+                        <p class="menu-desc">Freshly brewed aromatic coffee, perfect for a relaxing break.</p>
+                        <button class="btn btn-primary btn-order" data-item="Coffee">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-card fade-in stagger-2">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg" alt="Hot and cheesy pizza with fresh toppings">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">🍕 Pizza</h3>
+                            <span class="menu-price">₹250</span>
+                        </div>
+                        <p class="menu-desc">Hot and cheesy pizza prepared with fresh ingredients.</p>
+                        <button class="btn btn-primary btn-order" data-item="Pizza">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-card fade-in stagger-3">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/2299981/pexels-photo-2299981.jpeg" alt="Juicy burger with fresh vegetables and sesame bun">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">🍔 Burger</h3>
+                            <span class="menu-price">₹180</span>
+                        </div>
+                        <p class="menu-desc">Juicy burger with fresh vegetables and special sauce.</p>
+                        <button class="btn btn-primary btn-order" data-item="Burger">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-card fade-in stagger-4">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg" alt="Creamy pasta with fresh herbs on a plate">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">🍝 Pasta</h3>
+                            <span class="menu-price">₹220</span>
+                        </div>
+                        <p class="menu-desc">Creamy and delicious pasta prepared with fresh ingredients.</p>
+                        <button class="btn btn-primary btn-order" data-item="Pasta">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-card fade-in stagger-5">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/7801216/pexels-photo-7801216.jpeg" alt="Fresh sandwich with ingredients on wooden board">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">🥪 Sandwich</h3>
+                            <span class="menu-price">₹150</span>
+                        </div>
+                        <p class="menu-desc">Fresh and tasty sandwich, perfect for a quick meal.</p>
+                        <button class="btn btn-primary btn-order" data-item="Sandwich">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-card fade-in stagger-6">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/2067436/pexels-photo-2067436.jpeg" alt="Elegant chocolate cake with cream frosting and cherries">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">🍰 Chocolate Cake</h3>
+                            <span class="menu-price">₹140</span>
+                        </div>
+                        <p class="menu-desc">Soft and delicious chocolate cake for a sweet ending.</p>
+                        <button class="btn btn-primary btn-order" data-item="Chocolate Cake">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline btn-view-toggle" id="viewToggleBtn">View More</button>
+
+            <!-- ==================== ADD MENU ITEM ==================== -->
+            <div class="add-menu-section fade-in">
+                <div class="add-menu-toggle" id="addMenuToggle">
+                    <span>+ Add Menu Item</span>
+                </div>
+                <div class="add-menu-form-container" id="addMenuFormContainer">
+                    <form id="addMenuItemForm" class="add-menu-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" name="itemName" placeholder="Item Name *" required>
+                                <div class="form-error" id="itemNameError"></div>
+                            </div>
+                            <div class="form-field">
+                                <input type="number" name="itemPrice" placeholder="Price (₹) *" step="1" min="0" required>
+                                <div class="form-error" id="itemPriceError"></div>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="itemDescription" placeholder="Description *" required>
+                            <div class="form-error" id="itemDescError"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="url" name="itemImage" placeholder="Image URL *" required>
+                            <div class="form-error" id="itemImageError"></div>
+                        </div>
+                        <div class="form-error" id="addItemError"></div>
+                        <button type="submit" class="btn btn-primary">Add Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="special-offer" id="offer">
+        <div class="container">
+            <div class="offer-bg" style="background-image: url('https://images.pexels.com/photos/3124374/pexels-photo-3124374.jpeg');"></div>
+            <div class="offer-overlay"></div>
+            <div class="offer-content fade-in">
+                <h2>Today's Special</h2>
+                <div class="offer-badge">20% OFF</div>
+                <p class="offer-text">Enjoy your favorite food today with a special discount.</p>
+                <a href="#contact" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <section class="section reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">Testimonials</p>
+                <h2>What Our Customers Say</h2>
+                <p class="section-subtitle">Our customers love the food, atmosphere and friendly service at Royal Cafe.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card fade-in stagger-1">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Great food and a really comfortable atmosphere!"</p>
+                    <div class="review-author">— Rahul</div>
+                </div>
+                <div class="review-card fade-in stagger-2">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The coffee was amazing and the service was excellent."</p>
+                    <div class="review-author">— Priya</div>
+                </div>
+                <div class="review-card fade-in stagger-3">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Perfect place to spend time with friends and family."</p>
+                    <div class="review-author">— Aman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">Get in Touch</p>
+                <h2>Visit Royal Cafe</h2>
+                <p class="section-subtitle">Come visit us for delicious food, fresh coffee and a relaxing cafe experience. We would love to welcome you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in slide-in-left">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div><strong>Location</strong><p>Main Market, Delhi</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div><strong>Phone</strong><p>+91 98765 43210</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div><strong>Email</strong><p><a href="mailto:hello@royalcafe.example">hello@royalcafe.example</a></p></div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div><strong>Opening Hours</strong><p>10:00 AM – 10:00 PM</p></div>
+                    </div>
+                    <div class="map-placeholder">
+                        <p>🗺️ Interactive map coming soon</p>
+                    </div>
+                </div>
+                <form class="contact-form fade-in slide-in-right" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="tel" name="phone" placeholder="Phone" required>
+                            <div class="form-error" id="phoneError"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <div class="form-error" id="subjectError"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                        <div class="form-error" id="messageError"></div>
+                    </div>
+                    <div class="form-success" id="formSuccess"></div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">☕ Royal Cafe</a>
+                    <p>Fresh Food • Great Taste • Royal Experience</p>
+                    <p class="footer-tagline">Good food, great coffee and memorable moments — all in one place.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                        <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                        <a href="https://wa.me/919876543210" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Menu</h4>
+                    <a href="#menu">Coffee</a>
+                    <a href="#menu">Pizza</a>
+                    <a href="#menu">Burger</a>
+                    <a href="#menu">Pasta</a>
+                    <a href="#menu">Sandwich</a>
+                    <a href="#menu">Cake</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Hours</h4>
+                    <a href="#contact">Mon-Fri: 10AM – 10PM</a>
+                    <a href="#contact">Sat-Sun: 10AM – 10PM</a>
+                    <a href="#contact">Main Market, Delhi</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Royal Cafe. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== AUTH MODAL ==================== -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-overlay"></div>
+        <div class="auth-content">
+            <button class="auth-close" id="authClose" aria-label="Close">×</button>
+            <div class="auth-form active" id="loginForm">
+                <h2>Welcome Back</h2>
+                <p class="auth-subtitle">Login to your account</p>
+                <form id="loginFormEl" novalidate>
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <div class="auth-error" id="loginEmailError"></div>
+                    </div>
+                    <div class="form-field">
+                        <div class="password-wrapper">
+                            <input type="password" name="password" placeholder="Password" required>
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <span class="eye-icon">👁</span>
+                            </button>
+                        </div>
+                        <div class="auth-error" id="loginPasswordError"></div>
+                    </div>
+                    <a href="#" class="forgot-password" id="forgotPasswordLink">Forgot Password?</a>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </div>
+            <div class="auth-form" id="signupForm">
+                <h2>Create Account</h2>
+                <p class="auth-subtitle">Sign up to get started</p>
+                <form id="signupFormEl" novalidate>
+                    <div class="form-field">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <div class="auth-error" id="signupNameError"></div>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <div class="auth-error" id="signupEmailError"></div>
+                    </div>
+                    <div class="form-field">
+                        <div class="password-wrapper">
+                            <input type="password" name="password" placeholder="Password (min 6 chars)" required>
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <span class="eye-icon">👁</span>
+                            </button>
+                        </div>
+                        <div class="auth-error" id="signupPasswordError"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </form>
+                <p class="auth-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
